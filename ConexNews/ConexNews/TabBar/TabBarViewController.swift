@@ -16,6 +16,8 @@ class TabBarViewController: UITabBarController {
     }
 
     private func setupTabBar() {
+        setupView()
+        
         let newsController = UINavigationController(rootViewController: NewsViewController())
         newsController.tabBarItem = UITabBarItem(title: "News", image: UIImage(systemName: "newspaper"), selectedImage: UIImage(systemName: "newspaper.fill"))
         
@@ -25,4 +27,8 @@ class TabBarViewController: UITabBarController {
         self.viewControllers = [newsController, usersController]
     }
 
+    private func setupView() {
+        self.tabBar.tintColor = .systemPink
+        self.tabBar.backgroundColor = .black
+    }
 }
