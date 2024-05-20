@@ -19,6 +19,36 @@
 		F41792F82BFAD229002F910A /* ConexNewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41792F72BFAD229002F910A /* ConexNewsTests.swift */; };
 		F41793022BFAD229002F910A /* ConexNewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41793012BFAD229002F910A /* ConexNewsUITests.swift */; };
 		F41793042BFAD229002F910A /* ConexNewsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41793032BFAD229002F910A /* ConexNewsUITestsLaunchTests.swift */; };
+		F41793182BFADA3A002F910A /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41793162BFADA3A002F910A /* TabBarViewController.swift */; };
+		F41793192BFADA3A002F910A /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41793162BFADA3A002F910A /* TabBarViewController.swift */; };
+		F417931A2BFADA3A002F910A /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41793162BFADA3A002F910A /* TabBarViewController.swift */; };
+		F417931B2BFADA3A002F910A /* TabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F41793172BFADA3A002F910A /* TabBarViewController.xib */; };
+		F417931C2BFADA3A002F910A /* TabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F41793172BFADA3A002F910A /* TabBarViewController.xib */; };
+		F417931D2BFADA3A002F910A /* TabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F41793172BFADA3A002F910A /* TabBarViewController.xib */; };
+		F41793252BFADE5E002F910A /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41793232BFADE5E002F910A /* UsersViewController.swift */; };
+		F41793262BFADE5E002F910A /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41793232BFADE5E002F910A /* UsersViewController.swift */; };
+		F41793272BFADE5E002F910A /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41793232BFADE5E002F910A /* UsersViewController.swift */; };
+		F41793282BFADE5E002F910A /* UsersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F41793242BFADE5E002F910A /* UsersViewController.xib */; };
+		F41793292BFADE5E002F910A /* UsersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F41793242BFADE5E002F910A /* UsersViewController.xib */; };
+		F417932A2BFADE5E002F910A /* UsersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F41793242BFADE5E002F910A /* UsersViewController.xib */; };
+		F41793302BFADEA2002F910A /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F417932E2BFADEA2002F910A /* NewsViewController.swift */; };
+		F41793312BFADEA2002F910A /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F417932E2BFADEA2002F910A /* NewsViewController.swift */; };
+		F41793322BFADEA2002F910A /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F417932E2BFADEA2002F910A /* NewsViewController.swift */; };
+		F41793332BFADEA2002F910A /* NewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F417932F2BFADEA2002F910A /* NewsViewController.xib */; };
+		F41793342BFADEA2002F910A /* NewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F417932F2BFADEA2002F910A /* NewsViewController.xib */; };
+		F41793352BFADEA2002F910A /* NewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F417932F2BFADEA2002F910A /* NewsViewController.xib */; };
+		F41793372BFAE83D002F910A /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41793362BFAE83D002F910A /* UsersViewModel.swift */; };
+		F41793382BFAE83D002F910A /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41793362BFAE83D002F910A /* UsersViewModel.swift */; };
+		F41793392BFAE83D002F910A /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41793362BFAE83D002F910A /* UsersViewModel.swift */; };
+		F417933B2BFAE84E002F910A /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F417933A2BFAE84E002F910A /* NewsViewModel.swift */; };
+		F417933C2BFAE84E002F910A /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F417933A2BFAE84E002F910A /* NewsViewModel.swift */; };
+		F417933D2BFAE84E002F910A /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F417933A2BFAE84E002F910A /* NewsViewModel.swift */; };
+		F41793472BFAE8A0002F910A /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41793462BFAE8A0002F910A /* NewsModel.swift */; };
+		F41793482BFAE8A0002F910A /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41793462BFAE8A0002F910A /* NewsModel.swift */; };
+		F41793492BFAE8A0002F910A /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41793462BFAE8A0002F910A /* NewsModel.swift */; };
+		F417934B2BFAE8B9002F910A /* UsersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F417934A2BFAE8B9002F910A /* UsersModel.swift */; };
+		F417934C2BFAE8B9002F910A /* UsersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F417934A2BFAE8B9002F910A /* UsersModel.swift */; };
+		F417934D2BFAE8B9002F910A /* UsersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F417934A2BFAE8B9002F910A /* UsersModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +91,16 @@
 		F41792FD2BFAD229002F910A /* ConexNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConexNewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F41793012BFAD229002F910A /* ConexNewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConexNewsUITests.swift; sourceTree = "<group>"; };
 		F41793032BFAD229002F910A /* ConexNewsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConexNewsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F41793162BFADA3A002F910A /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		F41793172BFADA3A002F910A /* TabBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBarViewController.xib; sourceTree = "<group>"; };
+		F41793232BFADE5E002F910A /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		F41793242BFADE5E002F910A /* UsersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UsersViewController.xib; sourceTree = "<group>"; };
+		F417932E2BFADEA2002F910A /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		F417932F2BFADEA2002F910A /* NewsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsViewController.xib; sourceTree = "<group>"; };
+		F41793362BFAE83D002F910A /* UsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; };
+		F417933A2BFAE84E002F910A /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
+		F41793462BFAE8A0002F910A /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		F417934A2BFAE8B9002F910A /* UsersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +141,6 @@
 				719FFD5D18FEE870510DC3EC /* Pods-ConexNewsTests.debug.xcconfig */,
 				6F3BB4FF7E85787FE8A39109 /* Pods-ConexNewsTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -130,6 +169,9 @@
 		F41792DF2BFAD227002F910A /* ConexNews */ = {
 			isa = PBXGroup;
 			children = (
+				F417931E2BFADDD8002F910A /* News */,
+				F417931F2BFADDDD002F910A /* Users */,
+				F41793102BFAD8FA002F910A /* TabBar */,
 				F41792E02BFAD227002F910A /* AppDelegate.swift */,
 				F41792E22BFAD227002F910A /* SceneDelegate.swift */,
 				F41792E42BFAD227002F910A /* ViewController.swift */,
@@ -156,6 +198,85 @@
 				F41793032BFAD229002F910A /* ConexNewsUITestsLaunchTests.swift */,
 			);
 			path = ConexNewsUITests;
+			sourceTree = "<group>";
+		};
+		F41793102BFAD8FA002F910A /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				F41793162BFADA3A002F910A /* TabBarViewController.swift */,
+				F41793172BFADA3A002F910A /* TabBarViewController.xib */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		F417931E2BFADDD8002F910A /* News */ = {
+			isa = PBXGroup;
+			children = (
+				F417932B2BFADE73002F910A /* View */,
+				F417932C2BFADE7A002F910A /* Model */,
+				F417932D2BFADE83002F910A /* ViewModel */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		F417931F2BFADDDD002F910A /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				F41793202BFADE14002F910A /* View */,
+				F41793212BFADE1D002F910A /* Model */,
+				F41793222BFADE23002F910A /* ViewModel */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		F41793202BFADE14002F910A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F41793232BFADE5E002F910A /* UsersViewController.swift */,
+				F41793242BFADE5E002F910A /* UsersViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F41793212BFADE1D002F910A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F417934A2BFAE8B9002F910A /* UsersModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F41793222BFADE23002F910A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F41793362BFAE83D002F910A /* UsersViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F417932B2BFADE73002F910A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F417932E2BFADEA2002F910A /* NewsViewController.swift */,
+				F417932F2BFADEA2002F910A /* NewsViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F417932C2BFADE7A002F910A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F41793462BFAE8A0002F910A /* NewsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F417932D2BFADE83002F910A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F417933A2BFAE84E002F910A /* NewsViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		F82677CD9795F0B46A1D2C1A /* Frameworks */ = {
@@ -275,9 +396,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F41793282BFADE5E002F910A /* UsersViewController.xib in Resources */,
+				F417931B2BFADA3A002F910A /* TabBarViewController.xib in Resources */,
 				F41792ED2BFAD229002F910A /* LaunchScreen.storyboard in Resources */,
 				F41792EA2BFAD229002F910A /* Assets.xcassets in Resources */,
 				F41792E82BFAD227002F910A /* Main.storyboard in Resources */,
+				F41793332BFADEA2002F910A /* NewsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +409,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F417931C2BFADA3A002F910A /* TabBarViewController.xib in Resources */,
+				F41793292BFADE5E002F910A /* UsersViewController.xib in Resources */,
+				F41793342BFADEA2002F910A /* NewsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +419,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F417931D2BFADA3A002F910A /* TabBarViewController.xib in Resources */,
+				F417932A2BFADE5E002F910A /* UsersViewController.xib in Resources */,
+				F41793352BFADEA2002F910A /* NewsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,9 +501,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F41793182BFADA3A002F910A /* TabBarViewController.swift in Sources */,
+				F41793372BFAE83D002F910A /* UsersViewModel.swift in Sources */,
 				F41792E52BFAD227002F910A /* ViewController.swift in Sources */,
+				F41793472BFAE8A0002F910A /* NewsModel.swift in Sources */,
+				F41793252BFADE5E002F910A /* UsersViewController.swift in Sources */,
+				F41793302BFADEA2002F910A /* NewsViewController.swift in Sources */,
 				F41792E12BFAD227002F910A /* AppDelegate.swift in Sources */,
 				F41792E32BFAD227002F910A /* SceneDelegate.swift in Sources */,
+				F417934B2BFAE8B9002F910A /* UsersModel.swift in Sources */,
+				F417933B2BFAE84E002F910A /* NewsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,7 +518,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F41793482BFAE8A0002F910A /* NewsModel.swift in Sources */,
+				F41793192BFADA3A002F910A /* TabBarViewController.swift in Sources */,
+				F417933C2BFAE84E002F910A /* NewsViewModel.swift in Sources */,
+				F41793262BFADE5E002F910A /* UsersViewController.swift in Sources */,
 				F41792F82BFAD229002F910A /* ConexNewsTests.swift in Sources */,
+				F41793312BFADEA2002F910A /* NewsViewController.swift in Sources */,
+				F417934C2BFAE8B9002F910A /* UsersModel.swift in Sources */,
+				F41793382BFAE83D002F910A /* UsersViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,8 +533,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F41793492BFAE8A0002F910A /* NewsModel.swift in Sources */,
 				F41793022BFAD229002F910A /* ConexNewsUITests.swift in Sources */,
+				F41793392BFAE83D002F910A /* UsersViewModel.swift in Sources */,
+				F41793272BFADE5E002F910A /* UsersViewController.swift in Sources */,
+				F417931A2BFADA3A002F910A /* TabBarViewController.swift in Sources */,
+				F417933D2BFAE84E002F910A /* NewsViewModel.swift in Sources */,
+				F41793322BFADEA2002F910A /* NewsViewController.swift in Sources */,
 				F41793042BFAD229002F910A /* ConexNewsUITestsLaunchTests.swift in Sources */,
+				F417934D2BFAE8B9002F910A /* UsersModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
