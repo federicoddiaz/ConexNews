@@ -6,24 +6,90 @@
 //
 
 import UIKit
+import Toast_Swift
 
-class NewsViewController: UIViewController {
+final class NewsViewController: UIViewController {
 
+    @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var tableView: UITableView!
+    
+    private let newsCellHeight: CGFloat = 120
+    
+    private var viewModel = NewsViewModel(newsRepository: NewsRepository())
+    
+    private var isSearching = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        viewModel.delegate = self
+        setupTableView()
+        viewModel.fetchNews()
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func setupTableView() {
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(UINib(nibName: NewsTableViewCell.reuseIdentifier, bundle: nil), forCellReuseIdentifier: NewsTableViewCell.reuseIdentifier)
     }
-    */
+    
+    private func goToNewsDetail(post: Post) {
+        let vc = NewsDetailViewController(nibName: NewsDetailViewController.nibIdentifier, bundle: nil)
+        
+        vc.setupDetailedNew(post)
+        
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+}
 
+extension NewsViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return isSearching ? viewModel.numberOfFilteredNews() : viewModel.numberOfNews()
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return newsCellHeight
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: NewsTableViewCell.reuseIdentifier, for: indexPath) as? NewsTableViewCell else {
+            return UITableViewCell()
+        }
+        
+        if let post = isSearching ? viewModel.getFilteredPost(at: indexPath.row) : viewModel.getPost(at: indexPath.row) {
+            cell.setupCell(post: post)
+        }
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let post = isSearching ? viewModel.getFilteredPost(at: indexPath.row) : viewModel.getPost(at: indexPath.row) {
+            goToNewsDetail(post: post)
+        }
+    }
+}
+
+extension NewsViewController: NewsViewModelDelegate {
+    func fetchedNews() {
+        DispatchQueue.main.async { [weak self] in
+            self?.tableView.reloadData()
+        }
+    }
+    
+    func showError(message: String) {
+        self.view.makeToast(message, duration: 2.0, position: .bottom)
+    }
+}
+
+extension NewsViewController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if !searchText.isEmpty {
+            isSearching = true
+            viewModel.filterNewsWith(searchText)
+        } else {
+            isSearching = false
+        }
+        tableView.reloadData()
+    }
 }
