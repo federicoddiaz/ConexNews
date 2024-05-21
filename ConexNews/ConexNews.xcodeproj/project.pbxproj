@@ -49,6 +49,18 @@
 		F417934B2BFAE8B9002F910A /* UsersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F417934A2BFAE8B9002F910A /* UsersModel.swift */; };
 		F417934C2BFAE8B9002F910A /* UsersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F417934A2BFAE8B9002F910A /* UsersModel.swift */; };
 		F417934D2BFAE8B9002F910A /* UsersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F417934A2BFAE8B9002F910A /* UsersModel.swift */; };
+		F480248A2BFC0AFC00503C2F /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48024882BFC0AFC00503C2F /* NewsTableViewCell.swift */; };
+		F480248B2BFC0AFC00503C2F /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48024882BFC0AFC00503C2F /* NewsTableViewCell.swift */; };
+		F480248C2BFC0AFC00503C2F /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48024882BFC0AFC00503C2F /* NewsTableViewCell.swift */; };
+		F480248D2BFC0AFC00503C2F /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F48024892BFC0AFC00503C2F /* NewsTableViewCell.xib */; };
+		F480248E2BFC0AFC00503C2F /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F48024892BFC0AFC00503C2F /* NewsTableViewCell.xib */; };
+		F480248F2BFC0AFC00503C2F /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F48024892BFC0AFC00503C2F /* NewsTableViewCell.xib */; };
+		F480249A2BFC186E00503C2F /* NewsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48024992BFC186E00503C2F /* NewsRepository.swift */; };
+		F480249B2BFC186E00503C2F /* NewsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48024992BFC186E00503C2F /* NewsRepository.swift */; };
+		F480249C2BFC186E00503C2F /* NewsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48024992BFC186E00503C2F /* NewsRepository.swift */; };
+		F480249E2BFC1B7300503C2F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F480249D2BFC1B7300503C2F /* NetworkManager.swift */; };
+		F480249F2BFC1B7300503C2F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F480249D2BFC1B7300503C2F /* NetworkManager.swift */; };
+		F48024A02BFC1B7300503C2F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F480249D2BFC1B7300503C2F /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +113,10 @@
 		F417933A2BFAE84E002F910A /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
 		F41793462BFAE8A0002F910A /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		F417934A2BFAE8B9002F910A /* UsersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersModel.swift; sourceTree = "<group>"; };
+		F48024882BFC0AFC00503C2F /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		F48024892BFC0AFC00503C2F /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
+		F48024992BFC186E00503C2F /* NewsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRepository.swift; sourceTree = "<group>"; };
+		F480249D2BFC1B7300503C2F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +185,7 @@
 		F41792DF2BFAD227002F910A /* ConexNews */ = {
 			isa = PBXGroup;
 			children = (
+				F48024902BFC173500503C2F /* Networking */,
 				F417931E2BFADDD8002F910A /* News */,
 				F417931F2BFADDDD002F910A /* Users */,
 				F41793102BFAD8FA002F910A /* TabBar */,
@@ -257,6 +274,7 @@
 		F417932B2BFADE73002F910A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F48024872BFC0AD600503C2F /* NewsCell */,
 				F417932E2BFADEA2002F910A /* NewsViewController.swift */,
 				F417932F2BFADEA2002F910A /* NewsViewController.xib */,
 			);
@@ -277,6 +295,24 @@
 				F417933A2BFAE84E002F910A /* NewsViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F48024872BFC0AD600503C2F /* NewsCell */ = {
+			isa = PBXGroup;
+			children = (
+				F48024882BFC0AFC00503C2F /* NewsTableViewCell.swift */,
+				F48024892BFC0AFC00503C2F /* NewsTableViewCell.xib */,
+			);
+			path = NewsCell;
+			sourceTree = "<group>";
+		};
+		F48024902BFC173500503C2F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F48024992BFC186E00503C2F /* NewsRepository.swift */,
+				F480249D2BFC1B7300503C2F /* NetworkManager.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		F82677CD9795F0B46A1D2C1A /* Frameworks */ = {
@@ -399,6 +435,7 @@
 				F41793282BFADE5E002F910A /* UsersViewController.xib in Resources */,
 				F417931B2BFADA3A002F910A /* TabBarViewController.xib in Resources */,
 				F41792ED2BFAD229002F910A /* LaunchScreen.storyboard in Resources */,
+				F480248D2BFC0AFC00503C2F /* NewsTableViewCell.xib in Resources */,
 				F41792EA2BFAD229002F910A /* Assets.xcassets in Resources */,
 				F41792E82BFAD227002F910A /* Main.storyboard in Resources */,
 				F41793332BFADEA2002F910A /* NewsViewController.xib in Resources */,
@@ -411,6 +448,7 @@
 			files = (
 				F417931C2BFADA3A002F910A /* TabBarViewController.xib in Resources */,
 				F41793292BFADE5E002F910A /* UsersViewController.xib in Resources */,
+				F480248E2BFC0AFC00503C2F /* NewsTableViewCell.xib in Resources */,
 				F41793342BFADEA2002F910A /* NewsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -421,6 +459,7 @@
 			files = (
 				F417931D2BFADA3A002F910A /* TabBarViewController.xib in Resources */,
 				F417932A2BFADE5E002F910A /* UsersViewController.xib in Resources */,
+				F480248F2BFC0AFC00503C2F /* NewsTableViewCell.xib in Resources */,
 				F41793352BFADEA2002F910A /* NewsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -502,10 +541,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F41793182BFADA3A002F910A /* TabBarViewController.swift in Sources */,
+				F480248A2BFC0AFC00503C2F /* NewsTableViewCell.swift in Sources */,
 				F41793372BFAE83D002F910A /* UsersViewModel.swift in Sources */,
+				F480249E2BFC1B7300503C2F /* NetworkManager.swift in Sources */,
 				F41792E52BFAD227002F910A /* ViewController.swift in Sources */,
 				F41793472BFAE8A0002F910A /* NewsModel.swift in Sources */,
 				F41793252BFADE5E002F910A /* UsersViewController.swift in Sources */,
+				F480249A2BFC186E00503C2F /* NewsRepository.swift in Sources */,
 				F41793302BFADEA2002F910A /* NewsViewController.swift in Sources */,
 				F41792E12BFAD227002F910A /* AppDelegate.swift in Sources */,
 				F41792E32BFAD227002F910A /* SceneDelegate.swift in Sources */,
@@ -518,14 +560,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F480249B2BFC186E00503C2F /* NewsRepository.swift in Sources */,
 				F41793482BFAE8A0002F910A /* NewsModel.swift in Sources */,
 				F41793192BFADA3A002F910A /* TabBarViewController.swift in Sources */,
 				F417933C2BFAE84E002F910A /* NewsViewModel.swift in Sources */,
+				F480249F2BFC1B7300503C2F /* NetworkManager.swift in Sources */,
 				F41793262BFADE5E002F910A /* UsersViewController.swift in Sources */,
 				F41792F82BFAD229002F910A /* ConexNewsTests.swift in Sources */,
 				F41793312BFADEA2002F910A /* NewsViewController.swift in Sources */,
 				F417934C2BFAE8B9002F910A /* UsersModel.swift in Sources */,
 				F41793382BFAE83D002F910A /* UsersViewModel.swift in Sources */,
+				F480248B2BFC0AFC00503C2F /* NewsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,8 +578,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F48024A02BFC1B7300503C2F /* NetworkManager.swift in Sources */,
 				F41793492BFAE8A0002F910A /* NewsModel.swift in Sources */,
 				F41793022BFAD229002F910A /* ConexNewsUITests.swift in Sources */,
+				F480248C2BFC0AFC00503C2F /* NewsTableViewCell.swift in Sources */,
 				F41793392BFAE83D002F910A /* UsersViewModel.swift in Sources */,
 				F41793272BFADE5E002F910A /* UsersViewController.swift in Sources */,
 				F417931A2BFADA3A002F910A /* TabBarViewController.swift in Sources */,
@@ -542,6 +589,7 @@
 				F41793322BFADEA2002F910A /* NewsViewController.swift in Sources */,
 				F41793042BFAD229002F910A /* ConexNewsUITestsLaunchTests.swift in Sources */,
 				F417934D2BFAE8B9002F910A /* UsersModel.swift in Sources */,
+				F480249C2BFC186E00503C2F /* NewsRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -713,6 +761,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -742,6 +791,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
