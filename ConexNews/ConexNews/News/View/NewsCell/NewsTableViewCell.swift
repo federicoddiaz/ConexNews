@@ -13,8 +13,6 @@ class NewsTableViewCell: UITableViewCell {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var contentLabel: UILabel!
-    @IBOutlet weak var dateLabel: UILabel!
-    @IBOutlet weak var categoryLabel: UILabel!
     @IBOutlet weak var thumbnailImageView: UIImageView!
     
     private var post: Post?
@@ -23,19 +21,11 @@ class NewsTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
     
     func setupCell(post: Post) {
         self.post = post
         self.titleLabel.text = post.title
         self.contentLabel.text = post.content
-        self.categoryLabel.text = "Category: \(post.category?.rawValue ?? "")"
-        self.dateLabel.text = post.publishedAt
         
         if let url = URL(string: post.thumbnail ?? "") {
             DispatchQueue.global().async {

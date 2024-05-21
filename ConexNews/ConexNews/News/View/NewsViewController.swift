@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import Combine
+import Toast_Swift
 
 final class NewsViewController: UIViewController {
 
@@ -29,6 +29,14 @@ final class NewsViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: NewsTableViewCell.reuseIdentifier, bundle: nil), forCellReuseIdentifier: NewsTableViewCell.reuseIdentifier)
+    }
+    
+    private func goToNewsDetail(post: Post) {
+        let vc = NewsDetailViewController(nibName: NewsDetailViewController.nibIdentifier, bundle: nil)
+        
+        vc.setupDetailedNew(post)
+        
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 
@@ -54,7 +62,9 @@ extension NewsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //TODO: news detail here
+        if let post = viewModel.getPost(at: indexPath.row) {
+            goToNewsDetail(post: post)
+        }
     }
 }
 
@@ -66,6 +76,6 @@ extension NewsViewController: NewsViewModelDelegate {
     }
     
     func showError(message: String) {
-        //TODO: show error message
+        self.view.makeToast(message, duration: 2.0, position: .bottom)
     }
 }
