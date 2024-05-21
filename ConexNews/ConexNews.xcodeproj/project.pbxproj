@@ -67,6 +67,15 @@
 		F49E75AD2BFD02E1008A7668 /* NewsDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F49E75A92BFD02E1008A7668 /* NewsDetailViewController.xib */; };
 		F49E75AE2BFD02E1008A7668 /* NewsDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F49E75A92BFD02E1008A7668 /* NewsDetailViewController.xib */; };
 		F49E75AF2BFD02E1008A7668 /* NewsDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F49E75A92BFD02E1008A7668 /* NewsDetailViewController.xib */; };
+		F4DFC0432BFD26B200D25EB2 /* UsersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DFC0422BFD26B200D25EB2 /* UsersRepository.swift */; };
+		F4DFC0442BFD26B200D25EB2 /* UsersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DFC0422BFD26B200D25EB2 /* UsersRepository.swift */; };
+		F4DFC0452BFD26B200D25EB2 /* UsersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DFC0422BFD26B200D25EB2 /* UsersRepository.swift */; };
+		F4DFC0492BFD290B00D25EB2 /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DFC0472BFD290B00D25EB2 /* UsersTableViewCell.swift */; };
+		F4DFC04A2BFD290B00D25EB2 /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DFC0472BFD290B00D25EB2 /* UsersTableViewCell.swift */; };
+		F4DFC04B2BFD290B00D25EB2 /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DFC0472BFD290B00D25EB2 /* UsersTableViewCell.swift */; };
+		F4DFC04C2BFD290B00D25EB2 /* UsersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4DFC0482BFD290B00D25EB2 /* UsersTableViewCell.xib */; };
+		F4DFC04D2BFD290B00D25EB2 /* UsersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4DFC0482BFD290B00D25EB2 /* UsersTableViewCell.xib */; };
+		F4DFC04E2BFD290B00D25EB2 /* UsersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4DFC0482BFD290B00D25EB2 /* UsersTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +134,9 @@
 		F480249D2BFC1B7300503C2F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		F49E75A82BFD02E1008A7668 /* NewsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailViewController.swift; sourceTree = "<group>"; };
 		F49E75A92BFD02E1008A7668 /* NewsDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsDetailViewController.xib; sourceTree = "<group>"; };
+		F4DFC0422BFD26B200D25EB2 /* UsersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersRepository.swift; sourceTree = "<group>"; };
+		F4DFC0472BFD290B00D25EB2 /* UsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewCell.swift; sourceTree = "<group>"; };
+		F4DFC0482BFD290B00D25EB2 /* UsersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UsersTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,6 +269,7 @@
 		F41793202BFADE14002F910A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F4DFC0462BFD28ED00D25EB2 /* UsersCell */,
 				F41793232BFADE5E002F910A /* UsersViewController.swift */,
 				F41793242BFADE5E002F910A /* UsersViewController.xib */,
 			);
@@ -319,6 +332,7 @@
 			isa = PBXGroup;
 			children = (
 				F48024992BFC186E00503C2F /* NewsRepository.swift */,
+				F4DFC0422BFD26B200D25EB2 /* UsersRepository.swift */,
 				F480249D2BFC1B7300503C2F /* NetworkManager.swift */,
 			);
 			path = Networking;
@@ -331,6 +345,15 @@
 				F49E75A92BFD02E1008A7668 /* NewsDetailViewController.xib */,
 			);
 			path = NewsDetail;
+			sourceTree = "<group>";
+		};
+		F4DFC0462BFD28ED00D25EB2 /* UsersCell */ = {
+			isa = PBXGroup;
+			children = (
+				F4DFC0472BFD290B00D25EB2 /* UsersTableViewCell.swift */,
+				F4DFC0482BFD290B00D25EB2 /* UsersTableViewCell.xib */,
+			);
+			path = UsersCell;
 			sourceTree = "<group>";
 		};
 		F82677CD9795F0B46A1D2C1A /* Frameworks */ = {
@@ -454,6 +477,7 @@
 			files = (
 				F41793282BFADE5E002F910A /* UsersViewController.xib in Resources */,
 				F417931B2BFADA3A002F910A /* TabBarViewController.xib in Resources */,
+				F4DFC04C2BFD290B00D25EB2 /* UsersTableViewCell.xib in Resources */,
 				F41792ED2BFAD229002F910A /* LaunchScreen.storyboard in Resources */,
 				F480248D2BFC0AFC00503C2F /* NewsTableViewCell.xib in Resources */,
 				F49E75AD2BFD02E1008A7668 /* NewsDetailViewController.xib in Resources */,
@@ -469,6 +493,7 @@
 			files = (
 				F417931C2BFADA3A002F910A /* TabBarViewController.xib in Resources */,
 				F49E75AE2BFD02E1008A7668 /* NewsDetailViewController.xib in Resources */,
+				F4DFC04D2BFD290B00D25EB2 /* UsersTableViewCell.xib in Resources */,
 				F41793292BFADE5E002F910A /* UsersViewController.xib in Resources */,
 				F480248E2BFC0AFC00503C2F /* NewsTableViewCell.xib in Resources */,
 				F41793342BFADEA2002F910A /* NewsViewController.xib in Resources */,
@@ -481,6 +506,7 @@
 			files = (
 				F417931D2BFADA3A002F910A /* TabBarViewController.xib in Resources */,
 				F49E75AF2BFD02E1008A7668 /* NewsDetailViewController.xib in Resources */,
+				F4DFC04E2BFD290B00D25EB2 /* UsersTableViewCell.xib in Resources */,
 				F417932A2BFADE5E002F910A /* UsersViewController.xib in Resources */,
 				F480248F2BFC0AFC00503C2F /* NewsTableViewCell.xib in Resources */,
 				F41793352BFADEA2002F910A /* NewsViewController.xib in Resources */,
@@ -605,11 +631,13 @@
 				F41793472BFAE8A0002F910A /* NewsModel.swift in Sources */,
 				F41793252BFADE5E002F910A /* UsersViewController.swift in Sources */,
 				F480249A2BFC186E00503C2F /* NewsRepository.swift in Sources */,
+				F4DFC0492BFD290B00D25EB2 /* UsersTableViewCell.swift in Sources */,
 				F41793302BFADEA2002F910A /* NewsViewController.swift in Sources */,
 				F41792E12BFAD227002F910A /* AppDelegate.swift in Sources */,
 				F49E75AA2BFD02E1008A7668 /* NewsDetailViewController.swift in Sources */,
 				F41792E32BFAD227002F910A /* SceneDelegate.swift in Sources */,
 				F417934B2BFAE8B9002F910A /* UsersModel.swift in Sources */,
+				F4DFC0432BFD26B200D25EB2 /* UsersRepository.swift in Sources */,
 				F417933B2BFAE84E002F910A /* NewsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -626,7 +654,9 @@
 				F480249F2BFC1B7300503C2F /* NetworkManager.swift in Sources */,
 				F41793262BFADE5E002F910A /* UsersViewController.swift in Sources */,
 				F41792F82BFAD229002F910A /* ConexNewsTests.swift in Sources */,
+				F4DFC0442BFD26B200D25EB2 /* UsersRepository.swift in Sources */,
 				F41793312BFADEA2002F910A /* NewsViewController.swift in Sources */,
+				F4DFC04A2BFD290B00D25EB2 /* UsersTableViewCell.swift in Sources */,
 				F417934C2BFAE8B9002F910A /* UsersModel.swift in Sources */,
 				F41793382BFAE83D002F910A /* UsersViewModel.swift in Sources */,
 				F480248B2BFC0AFC00503C2F /* NewsTableViewCell.swift in Sources */,
@@ -641,10 +671,12 @@
 				F41793492BFAE8A0002F910A /* NewsModel.swift in Sources */,
 				F41793022BFAD229002F910A /* ConexNewsUITests.swift in Sources */,
 				F480248C2BFC0AFC00503C2F /* NewsTableViewCell.swift in Sources */,
+				F4DFC04B2BFD290B00D25EB2 /* UsersTableViewCell.swift in Sources */,
 				F41793392BFAE83D002F910A /* UsersViewModel.swift in Sources */,
 				F41793272BFADE5E002F910A /* UsersViewController.swift in Sources */,
 				F49E75AC2BFD02E1008A7668 /* NewsDetailViewController.swift in Sources */,
 				F417931A2BFADA3A002F910A /* TabBarViewController.swift in Sources */,
+				F4DFC0452BFD26B200D25EB2 /* UsersRepository.swift in Sources */,
 				F417933D2BFAE84E002F910A /* NewsViewModel.swift in Sources */,
 				F41793322BFADEA2002F910A /* NewsViewController.swift in Sources */,
 				F41793042BFAD229002F910A /* ConexNewsUITestsLaunchTests.swift in Sources */,
