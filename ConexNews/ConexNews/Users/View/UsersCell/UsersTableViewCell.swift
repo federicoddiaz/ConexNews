@@ -20,8 +20,10 @@ class UsersTableViewCell: UITableViewCell {
     }
 
     func setupCell(user: User) {
-        self.nameLabel.text = "\(user.lastname ?? ""), \(user.firstname ?? "")"
-        self.emailLabel.text = user.email
+        DispatchQueue.main.async { [weak self] in
+            self?.nameLabel.text = "\(user.lastname ?? ""), \(user.firstname ?? "")"
+            self?.emailLabel.text = user.email
+        }
     }
     
 }

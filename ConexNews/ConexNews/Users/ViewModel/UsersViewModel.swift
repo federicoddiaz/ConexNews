@@ -15,11 +15,11 @@ protocol UsersViewModelDelegate: AnyObject {
 final class UsersViewModel {
     
     weak var delegate: UsersViewModelDelegate?
-    private var usersRepository: UsersRepository
+    private var usersRepository: UsersProtocol
     
     private var users: Users? = []
     
-    init(delegate: UsersViewModelDelegate? = nil, usersRepository: UsersRepository) {
+    init(delegate: UsersViewModelDelegate? = nil, usersRepository: UsersProtocol) {
         self.delegate = delegate
         self.usersRepository = usersRepository
     }

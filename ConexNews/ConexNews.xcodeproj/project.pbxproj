@@ -76,6 +76,8 @@
 		F4DFC04C2BFD290B00D25EB2 /* UsersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4DFC0482BFD290B00D25EB2 /* UsersTableViewCell.xib */; };
 		F4DFC04D2BFD290B00D25EB2 /* UsersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4DFC0482BFD290B00D25EB2 /* UsersTableViewCell.xib */; };
 		F4DFC04E2BFD290B00D25EB2 /* UsersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4DFC0482BFD290B00D25EB2 /* UsersTableViewCell.xib */; };
+		F4DFC0522BFD33A600D25EB2 /* NewsViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DFC0512BFD33A600D25EB2 /* NewsViewControllerTest.swift */; };
+		F4DFC0582BFD411200D25EB2 /* UsersViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DFC0572BFD411200D25EB2 /* UsersViewControllerTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +139,8 @@
 		F4DFC0422BFD26B200D25EB2 /* UsersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersRepository.swift; sourceTree = "<group>"; };
 		F4DFC0472BFD290B00D25EB2 /* UsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewCell.swift; sourceTree = "<group>"; };
 		F4DFC0482BFD290B00D25EB2 /* UsersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UsersTableViewCell.xib; sourceTree = "<group>"; };
+		F4DFC0512BFD33A600D25EB2 /* NewsViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewControllerTest.swift; sourceTree = "<group>"; };
+		F4DFC0572BFD411200D25EB2 /* UsersViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewControllerTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +227,8 @@
 		F41792F62BFAD229002F910A /* ConexNewsTests */ = {
 			isa = PBXGroup;
 			children = (
+				F4DFC04F2BFD32B500D25EB2 /* News */,
+				F4DFC0502BFD32BC00D25EB2 /* Users */,
 				F41792F72BFAD229002F910A /* ConexNewsTests.swift */,
 			);
 			path = ConexNewsTests;
@@ -354,6 +360,22 @@
 				F4DFC0482BFD290B00D25EB2 /* UsersTableViewCell.xib */,
 			);
 			path = UsersCell;
+			sourceTree = "<group>";
+		};
+		F4DFC04F2BFD32B500D25EB2 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				F4DFC0512BFD33A600D25EB2 /* NewsViewControllerTest.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		F4DFC0502BFD32BC00D25EB2 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				F4DFC0572BFD411200D25EB2 /* UsersViewControllerTest.swift */,
+			);
+			path = Users;
 			sourceTree = "<group>";
 		};
 		F82677CD9795F0B46A1D2C1A /* Frameworks */ = {
@@ -646,10 +668,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4DFC0522BFD33A600D25EB2 /* NewsViewControllerTest.swift in Sources */,
 				F49E75AB2BFD02E1008A7668 /* NewsDetailViewController.swift in Sources */,
 				F480249B2BFC186E00503C2F /* NewsRepository.swift in Sources */,
 				F41793482BFAE8A0002F910A /* NewsModel.swift in Sources */,
 				F41793192BFADA3A002F910A /* TabBarViewController.swift in Sources */,
+				F4DFC0582BFD411200D25EB2 /* UsersViewControllerTest.swift in Sources */,
 				F417933C2BFAE84E002F910A /* NewsViewModel.swift in Sources */,
 				F480249F2BFC1B7300503C2F /* NetworkManager.swift in Sources */,
 				F41793262BFADE5E002F910A /* UsersViewController.swift in Sources */,

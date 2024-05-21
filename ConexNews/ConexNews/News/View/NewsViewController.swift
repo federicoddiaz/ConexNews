@@ -15,18 +15,23 @@ final class NewsViewController: UIViewController {
     
     private let newsCellHeight: CGFloat = 120
     
-    private var viewModel = NewsViewModel(newsRepository: NewsRepository())
+    internal var viewModel: NewsViewModel!
     
     private var isSearching = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        viewModel.delegate = self
         setupTableView()
+        viewModel.delegate = self
         viewModel.fetchNews()
     }
 
+    func setViewModel(newsRepository: NewsProtocol) {
+        self.viewModel = NewsViewModel(newsRepository: newsRepository)
+        
+    }
+    
     private func setupTableView() {
         tableView.delegate = self
         tableView.dataSource = self

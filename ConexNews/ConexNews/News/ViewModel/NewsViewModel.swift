@@ -15,12 +15,12 @@ protocol NewsViewModelDelegate: AnyObject {
 final class NewsViewModel {
     
     weak var delegate: NewsViewModelDelegate?
-    private var newsRepository: NewsRepository
+    private var newsRepository: NewsProtocol
     
     private var news: Posts? = []
     private var filteredNews: Posts? = []
     
-    init(delegate: NewsViewModelDelegate? = nil, newsRepository: NewsRepository) {
+    init(delegate: NewsViewModelDelegate? = nil, newsRepository: NewsProtocol) {
         self.delegate = delegate
         self.newsRepository = newsRepository
     }

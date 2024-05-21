@@ -16,14 +16,28 @@ class TabBarViewController: UITabBarController {
     }
 
     private func setupTabBar() {
-        let newsController = UINavigationController(rootViewController: NewsViewController())
+        self.viewControllers = [getNewsController(), getUsersController()]
+    }
+    
+    private func getNewsController() -> UINavigationController {
+        let newsVC = NewsViewController()
+        newsVC.setViewModel(newsRepository: NewsRepository())
+        
+        let newsController = UINavigationController(rootViewController: newsVC)
         newsController.setNavigationBarHidden(true, animated: false)
         newsController.tabBarItem = UITabBarItem(title: "News", image: UIImage(systemName: "newspaper"), selectedImage: UIImage(systemName: "newspaper.fill"))
         
-        let usersController = UINavigationController(rootViewController: UsersViewController())
-        newsController.setNavigationBarHidden(true, animated: false)
+        return newsController
+    }
+    
+    private func getUsersController() -> UINavigationController {
+        let usersVC = UsersViewController()
+        usersVC.setViewModel(usersRepository: UsersRepository())
+        
+        let usersController = UINavigationController(rootViewController: usersVC)
+        usersController.setNavigationBarHidden(true, animated: false)
         usersController.tabBarItem = UITabBarItem(title: "Users", image: UIImage(systemName: "person.3"), selectedImage: UIImage(systemName: "person.3.fill"))
         
-        self.viewControllers = [newsController, usersController]
+        return usersController
     }
 }
