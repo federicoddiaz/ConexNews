@@ -14,14 +14,19 @@ class UsersViewController: UIViewController {
     
     private let usersCellHeight: CGFloat = 69
     
-    private var viewModel = UsersViewModel(usersRepository: UsersRepository())
+    internal var viewModel: UsersViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        viewModel.delegate = self
         setupTableView()
+        viewModel.delegate = self
         viewModel.fetchUsers()
+    }
+    
+    func setViewModel(usersRepository: UsersProtocol) {
+        self.viewModel = UsersViewModel(usersRepository: usersRepository)
+        
     }
 
     private func setupTableView() {
