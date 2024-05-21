@@ -51,3 +51,8 @@ Volviendo a la sección de Usuarios, se abre el navegador del dispositivo con la
 Por último, cree un proyecto de Pods, para el que utilice Toast-Swfit, una librería que permite mostrar un mensaje en pantalla por unos segundos de manera sencilla.
 Decidí utilizarlo para informar cuando había un error de conexión o algo similar.
 https://cocoapods.org/pods/Toast-Swift
+![Simulator Screenshot - iPhone 15 Pro - 2024-05-21 at 18 31 17](https://github.com/federicoddiaz/ConexNews/assets/42976339/f46e3478-0f09-48eb-8305-7b17bf54ff36)
+![Simulator Screenshot - iPhone 15 Pro - 2024-05-21 at 18 31 22](https://github.com/federicoddiaz/ConexNews/assets/42976339/3b80815a-b388-482d-92e8-26a7da7fc328)
+![Simulator Screenshot - iPhone 15 Pro - 2024-05-21 at 18 31 27](https://github.com/federicoddiaz/ConexNews/assets/42976339/886591eb-f2e8-4ba9-aec9-7e8084801f57)
+![Simulator Screenshot - iPhone 15 Pro - 2024-05-21 at 18 31 32](https://github.com/federicoddiaz/ConexNews/assets/42976339/5208b470-faea-4081-bb23-f9f1ad3d3224)
+
