@@ -31,20 +31,20 @@ class UsersViewController: UIViewController {
     }
     
     private func showLocation(user: User) {
-        guard let street = user.address?.street, let city = user.address?.city, let zipCode = user.address?.zipcode else {
+        guard let lat = user.address?.geo?.lat, let lon = user.address?.geo?.lng else {
             
-            self.view.makeToast("Invalid address", duration: 2.0, position: .bottom)
+            self.view.makeToast("Invalid location", duration: 2.0, position: .bottom)
             return
         }
         
-        let address = "\(street), \(city), \(zipCode)"
-        let encodedAddress = address.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
-        let googleMapsURLString = "comgooglemaps://?q=\(encodedAddress)"
+        let coordinates = "\(lat), \(lon)"
+        let encodedCoordinates = coordinates.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
+        let googleMapsURLString = "comgooglemaps://?q=\(encodedCoordinates)"
         
         if let googleMapsURL = URL(string: googleMapsURLString), UIApplication.shared.canOpenURL(googleMapsURL) {
             UIApplication.shared.open(googleMapsURL, options: [:], completionHandler: nil)
         } else {
-            let googleMapsWebURLString = "https://www.google.com/maps?q=\(encodedAddress)"
+            let googleMapsWebURLString = "https://www.google.com/maps?q=\(encodedCoordinates)"
             if let googleMapsWebURL = URL(string: googleMapsWebURLString) {
                 UIApplication.shared.open(googleMapsWebURL, options: [:], completionHandler: nil)
             }
