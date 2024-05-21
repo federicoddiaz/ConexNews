@@ -15,15 +15,17 @@ protocol NewsViewModelDelegate: AnyObject {
 final class NewsViewModel {
     
     weak var delegate: NewsViewModelDelegate?
-    
     private var newsRepository: NewsRepository
+    
     private var news: Posts? = []
+    private var filteredNews: Posts? = []
     
     init(delegate: NewsViewModelDelegate? = nil, newsRepository: NewsRepository) {
         self.delegate = delegate
         self.newsRepository = newsRepository
     }
     
+    //MARK: All news
     func fetchNews() {
         newsRepository.fetchNews { [weak self] result in
             
@@ -45,5 +47,21 @@ final class NewsViewModel {
     
     func getPost(at index: Int) -> Post? {
         return news?[index]
+    }
+    
+    //MARK: Filtered news
+    func filterNewsWith(_ searchText: String) {
+        self.filteredNews = news?.filter { post in
+            post.title?.lowercased().contains(searchText.lowercased()) ?? false ||
+            post.content?.lowercased().contains(searchText.lowercased()) ?? false
+        }
+    }
+    
+    func numberOfFilteredNews() -> Int {
+        return filteredNews?.count ?? 0
+    }
+    
+    func getFilteredPost(at index: Int) -> Post? {
+        return filteredNews?[index]
     }
 }

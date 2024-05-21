@@ -13,9 +13,11 @@ final class NewsViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     
-    private let newsCellHeight: CGFloat = 170
+    private let newsCellHeight: CGFloat = 120
     
     private var viewModel = NewsViewModel(newsRepository: NewsRepository())
+    
+    private var isSearching = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,7 +44,7 @@ final class NewsViewController: UIViewController {
 
 extension NewsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.numberOfNews()
+        return isSearching ? viewModel.numberOfFilteredNews() : viewModel.numberOfNews()
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -54,7 +56,7 @@ extension NewsViewController: UITableViewDelegate, UITableViewDataSource {
             return UITableViewCell()
         }
         
-        if let post = viewModel.getPost(at: indexPath.row) {
+        if let post = isSearching ? viewModel.getFilteredPost(at: indexPath.row) : viewModel.getPost(at: indexPath.row) {
             cell.setupCell(post: post)
         }
         
@@ -62,7 +64,7 @@ extension NewsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let post = viewModel.getPost(at: indexPath.row) {
+        if let post = isSearching ? viewModel.getFilteredPost(at: indexPath.row) : viewModel.getPost(at: indexPath.row) {
             goToNewsDetail(post: post)
         }
     }
@@ -77,5 +79,17 @@ extension NewsViewController: NewsViewModelDelegate {
     
     func showError(message: String) {
         self.view.makeToast(message, duration: 2.0, position: .bottom)
+    }
+}
+
+extension NewsViewController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if !searchText.isEmpty {
+            isSearching = true
+            viewModel.filterNewsWith(searchText)
+        } else {
+            isSearching = false
+        }
+        tableView.reloadData()
     }
 }
